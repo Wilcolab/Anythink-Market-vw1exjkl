@@ -1,0 +1,17 @@
+{
+	"name": "laravel-fresh-install",
+
+	// "xdebug.php-debug" = official XDEBUG extension
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"xdebug.php-debug"
+			]
+		}
+	},
+
+	"forwardPorts": [80],
+
+	// execute our one-time repo init if /vendor/ does not exist
+	"postCreateCommand": "sh init_repo.sh"
+}
